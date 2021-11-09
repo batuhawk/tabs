@@ -1,5 +1,5 @@
 # Tabs
-Basically custom tabs component.
+Custom tabs component.
 ## What I Learn
 * Read Direction
 ## Project View
