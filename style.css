@@ -1,0 +1,88 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+}
+
+.tabs {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 350px;
+  width: 700px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.tab-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 75px;
+  width: 100%;
+}
+
+.tab-header li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 100%;
+  cursor: pointer;
+  background-color: #d0d0d0;
+  box-shadow: 13px 25px 45px -7px rgb(0 0 0);
+  transition: all 0.3s;
+}
+
+.tab-header li:hover {
+  height: 90%;
+  color: #fff;
+  background-color: #808080;
+}
+
+.tab-header li.active {
+  height: 100%;
+  background-color: #5A9890;
+}
+
+.tab-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 275px;
+  width: 100%;
+}
+
+.tab-content div {
+  display: none;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 20px 0 0 20px;
+  width: 100%;
+  height: 100%;
+  transition: display 0.3s;
+}
+
+.tab-content div h3 {
+  margin: 0 0 10px 0;
+}
+
+.tab-content div.active {
+  display: flex;
+  background-color: #5A9890;
+}
